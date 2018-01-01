@@ -1,6 +1,6 @@
 {
   "name": "redux-standard-reducers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of utilities to create reducers that are Flux Standard Data Storage compliant",
   "main": "index.js",
   "repository": "https://github.com/sagiavinash/redux-standard-reducers.git",
