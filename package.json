@@ -5,6 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/sagiavinash/redux-reducers.git",
   "scripts": {
+    "build": "webpack",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,5 +16,14 @@
     "javascript"
   ],
   "author": "https://github.com/sagiavinash/",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "redux-actions": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.6.0"
+  }
 }
