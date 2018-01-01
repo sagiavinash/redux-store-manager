@@ -13,15 +13,15 @@ const successAction = getInfoActions.end({id: 1, title: 'hello'});
 const failureAction = getInfoActions.end(new Error('Internal Server Error'));
 
 const initialState = infoReducer(undefined, {});
-const startAfterStart = infoReducer(initialState, startAction);
-const startAfterSuccess = infoReducer(initialState, successAction);
-const startAfterFailure = infoReducer(initialState, failureAction);
+const stateAfterStart = infoReducer(initialState, startAction);
+const stateAfterSuccess = infoReducer(initialState, successAction);
+const stateAfterFailure = infoReducer(initialState, failureAction);
 
 console.log('startAction', startAction);
 console.log('successAction', successAction);
 console.log('failureAction', failureAction);
 
 console.log('initialState', initialState);
-console.log('startAfterStart', startAfterStart);
-console.log('startAfterSuccess', startAfterSuccess);
-console.log('startAfterFailure', startAfterFailure);
+console.log('stateAfterStart', stateAfterStart);
+console.log('stateAfterSuccess', stateAfterSuccess);
+console.log('stateAfterFailure', stateAfterFailure);
