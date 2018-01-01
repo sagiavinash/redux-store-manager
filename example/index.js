@@ -1,7 +1,7 @@
-// import reduxReducer, {createAsyncTaskActions} = 'redux-reducers';
+// import reduxReducer, {createAsyncTaskActions} = 'redux-standard-reducers';
 
-const reduxReducer = require('../dist/redux-reducers').default;
-const createAsyncTaskActions = require('../dist/redux-reducers').createAsyncTaskActions;
+const reduxReducer = require('../dist/redux-standard-reducers').default;
+const createAsyncTaskActions = require('../dist/redux-standard-reducers').createAsyncTaskActions;
 
 const getInfoTaskId = 'GET_INFO';
 
