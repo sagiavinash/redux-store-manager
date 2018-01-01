@@ -1,0 +1,18 @@
+{
+  "name": "redux-reducers",
+  "version": "1.0.0",
+  "description": "A set of utilities to create reducers that are Flux Standard Data Storage compliant",
+  "main": "index.js",
+  "repository": "https://github.com/sagiavinash/redux-reducers.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "flux-standard-data-storage",
+    "javascript"
+  ],
+  "author": "https://github.com/sagiavinash/",
+  "license": "MIT"
+}
