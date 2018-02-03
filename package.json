@@ -1,7 +1,8 @@
 {
   "name": "redux-standard-reducers",
-  "version": "1.1.0",
-  "description": "A set of utilities to create reducers that are Flux Standard Data Storage compliant",
+  "version": "1.1.2",
+  "description":
+    "A set of utilities to create reducers that are Flux Standard Data Storage compliant",
   "main": "index.js",
   "repository": "https://github.com/sagiavinash/redux-standard-reducers.git",
   "scripts": {
@@ -9,15 +10,11 @@
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "react",
-    "redux",
-    "flux-standard-data-storage",
-    "javascript"
-  ],
+  "keywords": ["react", "redux", "flux-standard-data-storage", "javascript"],
   "author": "https://github.com/sagiavinash/",
   "license": "MIT",
   "dependencies": {
+    "just-extend": "^1.1.27",
     "redux-actions": "^2.2.1"
   },
   "devDependencies": {
