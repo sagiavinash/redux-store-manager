@@ -1,26 +1,39 @@
 {
-  "name": "redux-standard-reducers",
-  "version": "1.1.2",
-  "description":
-    "A set of utilities to create reducers that are Flux Standard Data Storage compliant",
+  "name": "redux-builder",
+  "version": "0.1",
+  "description": "A library to assemble redux store enabling container components to own reducers, code splitting and dead code elimination",
   "main": "index.js",
-  "repository": "https://github.com/sagiavinash/redux-standard-reducers.git",
+  "module": "es/index.js",
+  "repository": "https://github.com/sagiavinash/redux-builder.git",
   "scripts": {
     "build": "webpack",
+    "build-esm": "babel lib/index.js -o es/index.js",
+    "lint": "eslint --ext js ./lib",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["react", "redux", "flux-standard-data-storage", "javascript"],
+  "keywords": [
+    "javascript",
+    "redux",
+    "code splitting",
+    "react"
+  ],
   "author": "https://github.com/sagiavinash/",
   "license": "MIT",
-  "dependencies": {
-    "just-extend": "^1.1.27",
-    "redux-actions": "^2.2.1"
-  },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
+    "eslint": "4",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "redux": "^2.2.1"
   }
 }

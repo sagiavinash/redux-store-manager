@@ -1,1 +1,1 @@
-module.exports = require('./dist/redux-standard-reducers');
+module.exports = require('./dist/redux-builder');
