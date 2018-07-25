@@ -7,8 +7,8 @@ var config = {
   entry: path.resolve(__dirname, './lib/'),
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'redux-builder.js',
-    library: 'redux-builder',
+    filename: 'redux-store-manager.js',
+    library: 'redux-store-manager',
     libraryTarget: 'umd',
   },
   module: {

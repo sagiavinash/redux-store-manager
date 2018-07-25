@@ -1,15 +1,15 @@
 {
-  "name": "redux-builder",
-  "version": "0.1",
+  "name": "redux-store-manager",
+  "version": "0.1.4",
   "description": "A library to assemble redux store enabling container components to own reducers, code splitting and dead code elimination",
   "main": "index.js",
   "module": "es/index.js",
-  "repository": "https://github.com/sagiavinash/redux-builder.git",
+  "repository": "https://github.com/sagiavinash/redux-store-manager.git",
   "scripts": {
     "build": "webpack",
     "build-esm": "babel lib/index.js -o es/index.js",
     "lint": "eslint --ext js ./lib",
-    "prepublish": "npm run build",
+    "prepublish": "npm run lint;npm run build;npm run build-esm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

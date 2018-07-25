@@ -1,1 +1,1 @@
-module.exports = require('./dist/redux-builder');
+module.exports = require('./dist/redux-store-manager');
