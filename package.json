@@ -1,7 +1,7 @@
 {
   "name": "redux-store-manager",
-  "version": "0.1.5",
-  "description": "A library to assemble redux store enabling container components to own reducers, code splitting and dead code elimination",
+  "version": "0.1.8",
+  "description": "Declaratively code-split your redux store and make containers own entire redux flow using redux-store-manager",
   "main": "index.js",
   "module": "es/index.js",
   "repository": "https://github.com/sagiavinash/redux-store-manager.git",
