@@ -1,6 +1,6 @@
 {
   "name": "redux-store-manager",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A library to assemble redux store enabling container components to own reducers, code splitting and dead code elimination",
   "main": "index.js",
   "module": "es/index.js",
