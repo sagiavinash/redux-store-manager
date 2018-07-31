@@ -1,6 +1,6 @@
 {
   "name": "redux-store-manager",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Declaratively code-split your redux store and make containers own entire redux flow using redux-store-manager",
   "main": "index.js",
   "module": "es/index.js",

@@ -8,7 +8,7 @@ yarn add redux-store-manager
 
 ## Problem
 1. rootReducer is traditionally created manually using combineReducers and this makes code-splitting reducers based on how widgets consuming their data are loaded(whether they are in the main bundle or on-demand bundles) hard.
-2. Bundler cant treeshake or dead code eliminate the rootReducer to not include reducers whose data is not consumed by any container components
+2. Bundler cant tree-shake or dead code eliminate the rootReducer to not include reducers whose data is not consumed by any container components
 
 ## Solution
 1. Let the containers that are going to consume the data stored by a reducer and trigger actions take responsibility of adding a reducer to the store.
@@ -57,7 +57,7 @@ App.js
 
 ```js
 import React, {Component} from 'react';
-import storeManager from 'redux-store-manager';
+import {withRefreshedStore} from 'redux-store-manager';
 import SimpleWidgetContainer from './containers/SimpleWidgetContainer';
 
 export default class App extends React {
@@ -66,9 +66,7 @@ export default class App extends React {
   };
   componentWillMount() {
     // when loading a widget on-demand along with the component codebase the reducers are also
-    import('./containers/SimpleWidgetContainer').then((module) => {
-      storeManager.refreshStore();
-
+    withRefreshedStore(import('./containers/SimpleWidgetContainer')).then((module) => {
       this.setState({OnDemandWidgetContainer: module.default});
     });
   }
